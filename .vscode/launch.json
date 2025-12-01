@@ -2,7 +2,6 @@
   "configurations": [
     {
       "type": "java",
-   
       "name": "Spring Boot-V1Application<v1>",
       "request": "launch",
       "cwd": "${workspaceFolder}",

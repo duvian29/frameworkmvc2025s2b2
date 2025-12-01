@@ -18,11 +18,33 @@
 
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" th:href="@{/mision}">Misión</a></li>
-          <li class="nav-item"><a class="nav-link" th:href="@{/vision}">Visión</a></li>
-          <li class="nav-item"><a class="nav-link" th:href="@{/valores}">Valores</a></li>
-          <li class="nav-item"><a class="nav-link" th:href="@{/servicios}">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" th:href="@{/eventos}">Eventos</a></li>
+          <li class="nav-item"><a class="nav-link" th:href="@{/index/home/mision}">Misión</a></li>
+        <li class="nav-item"><a class="nav-link" th:href="@{/index/home/vision}">Visión</a></li>
+        <li class="nav-item"><a class="nav-link" th:href="@{/index/home/valores}">Valores</a></li>
+        <li class="nav-item"><a class="nav-link" th:href="@{/index/home/servicios}">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" th:href="@{/index/home/eventos}">Eventos</a></li>
+         <!--Registro -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Registro
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" th:href="@{/registro/estudiante}">Inscripción Estudiante</a></li>
+            <li><a class="dropdown-item" th:href="@{/registro/instructor}">Inscripción Instructor</a></li>
+          </ul>
+        </li>
+
+        <!-- Clases -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Clases
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" th:href="@{/clases/horario-estudiante}">Horario Estudiante</a></li>
+            <li><a class="dropdown-item" th:href="@{/clases/horario-instructor}">Horario Instructor</a></li>
+            <li><a class="dropdown-item" th:href="@{/clases/listar-estudiantes}">Listar Estudiantes</a></li>
+          </ul>
+        </li>
         </ul>
       </div>
     </div>
