@@ -7,7 +7,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.Column;
 
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
@@ -21,9 +20,12 @@ public class UsuarioModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long IdUsuario;
-    @Column(name = "nombre", nullable = true, length= 50)
-    String NombreUsuario;
-    @Column(name = "contrasena", nullable = true, length= 50)
-    String Contrasena;
+    @Column(name = "idUsuario")
+    private Long id;  
+
+    @Column(name = "nombre", nullable = true, length = 50)
+    private String nombreUsuario;
+
+    @Column(name = "contrasena", nullable = true, length = 50)
+    private String contrasena;
 }

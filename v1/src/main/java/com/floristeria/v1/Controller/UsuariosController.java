@@ -11,13 +11,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class UsuariosController {
 
     @Autowired
-    UsuarioServiceImp usuarioServiceImp;
+    private UsuarioServiceImp usuarioServiceImp;
 
     @RequestMapping("/listar")
     public String listarUsuarios(Model model) {
 
+        // Cargar todos los usuarios desde el servicio
         model.addAttribute("usuarios", usuarioServiceImp.mostrarTodos());
 
+        // Retornar la vista correspondiente
         return "usuarios/listarusuarios";
     }
 }
