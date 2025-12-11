@@ -1,11 +1,11 @@
-# 🪴 Proyecto Floristería – Spring Boot (v1)
+# 🪴 Escuela de Patinaje "Roller Speed" – Spring Boot (v1)
 ### Backend desarrollado con Spring Boot 3.5.7 · Java 21 · Maven · JPA · Thymeleaf · MySQL
 
 ---
 
 ## 📌 Descripción del proyecto
 
-Este proyecto corresponde al desarrollo del backend de una aplicación de gestión para una floristería.  
+Este proyecto corresponde al desarrollo del backend de una aplicación de gestión para una escuela de patinaje.  
 Incluye la instalación, configuración y ejecución del entorno necesario: **Java 21**, **IntelliJ IDEA**, **Docker**, **MySQL**, **VS Code** y herramientas adicionales para desarrollo ágil.
 
 En el apartado técnico se configuró el archivo `pom.xml`, agregando dependencias clave como:
